@@ -7,7 +7,34 @@
 
 ---
 
-[TOC]
+- [1. Objectif du projet](#1-objectif-du-projet)
+- [2. Topologie et plan d'adressage](#2-topologie-et-plan-dadressage)
+- [3. Configuration de R1](#3-configuration-de-r1)
+  - [3.1 Configuration des interfaces](#31-configuration-des-interfaces)
+  - [3.2 Ajout de la description WAN](#32-ajout-de-la-description-wan)
+  - [3.3 Route par défaut](#33-route-par-défaut)
+  - [3.4 Configuration du NAT (PAT / overload)](#34-configuration-du-nat-pat--overload)
+  - [3.5 Création et application du pare-feu (ACL étendue nommée)](#35-création-et-application-du-pare-feu-acl-étendue-nommée)
+- [4. Configuration des PC (VPCS)](#4-configuration-des-pc-vpcs)
+  - [4.1 PC1](#41-pc1)
+  - [4.2 PC2](#42-pc2)
+- [5. Tests avant le pare-feu](#5-tests-avant-le-pare-feu)
+  - [5.1 Tests depuis PC1](#51-tests-depuis-pc1)
+  - [5.2 Table NAT](#52-table-nat)
+- [6. Tests après le pare-feu](#6-tests-après-le-pare-feu)
+  - [6.1 Tests depuis PC1](#61-tests-depuis-pc1)
+  - [6.2 Test bonus : Telnet (port 23) depuis PC1](#62-test-bonus--telnet-port-23-depuis-pc1)
+  - [6.3 Test depuis PC2 (port 80)](#63-test-depuis-pc2-port-80)
+- [7. Analyse des compteurs de l'ACL](#7-analyse-des-compteurs-de-lacl)
+- [8. Problèmes rencontrés](#8-problèmes-rencontrés)
+- [9. Conclusion](#9-conclusion)
+- [10. Annexe – Commandes par équipement](#10-annexe--commandes-par-équipement)
+  - [10.1 NAT1](#101-nat1)
+  - [10.2 R1](#102-r1)
+  - [10.3 Switch1](#103-switch1)
+  - [10.4 PC1](#104-pc1)
+  - [10.5 PC2](#105-pc2)
+- [11. Liste des captures](#11-liste-des-captures)
 
 ---
 

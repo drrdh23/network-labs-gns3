@@ -8,7 +8,37 @@
 
 ## Sommaire
 
-[TOC]
+- [1. Contexte](#1-contexte)
+- [2. Objectifs](#2-objectifs)
+- [3. Principe des VLAN](#3-principe-des-vlan)
+  - [3.1 Qu'est-ce qu'un VLAN ?](#31-quest-ce-quun-vlan-)
+  - [3.2 Comment ça marche ?](#32-comment-ça-marche-)
+  - [3.3 Pourquoi utiliser des VLAN ?](#33-pourquoi-utiliser-des-vlan-)
+- [4. Environnement de travail](#4-environnement-de-travail)
+- [5. Plan des VLAN et adressage](#5-plan-des-vlan-et-adressage)
+  - [5.1 Les VLAN](#51-les-vlan)
+  - [5.2 Plan d'adressage](#52-plan-dadressage)
+- [6. Schéma réseau](#6-schéma-réseau)
+  - [6.1 Topologie annotée dans GNS3](#61-topologie-annotée-dans-gns3)
+  - [6.2 Schéma simplifié](#62-schéma-simplifié)
+- [7. Configuration du switch SW1](#7-configuration-du-switch-sw1)
+  - [7.1 Création du projet](#71-création-du-projet)
+  - [7.2 Attribution des ports aux VLAN](#72-attribution-des-ports-aux-vlan)
+  - [7.3 Câblage](#73-câblage)
+  - [7.4 Équivalent sur un vrai switch Cisco](#74-équivalent-sur-un-vrai-switch-cisco)
+- [8. Configuration des postes](#8-configuration-des-postes)
+  - [PC1 — VLAN 10 — port e5](#pc1--vlan-10--port-e5)
+  - [PC2 — VLAN 10 — port e6](#pc2--vlan-10--port-e6)
+  - [PC3 — VLAN 20 — port e7](#pc3--vlan-20--port-e7)
+  - [PC4 — VLAN 20 — port e8](#pc4--vlan-20--port-e8)
+- [9. Tests d'étanchéité](#9-tests-détanchéité)
+  - [9.1 Test 1 — Même VLAN : la communication doit fonctionner](#91-test-1--même-vlan--la-communication-doit-fonctionner)
+  - [9.2 Test 2 — VLAN différents : la communication doit échouer ❌](#92-test-2--vlan-différents--la-communication-doit-échouer-)
+  - [9.3 Test 3 — Preuve renforcée : même réseau IP, VLAN différents](#93-test-3--preuve-renforcée--même-réseau-ip-vlan-différents)
+  - [9.4 Synthèse des tests](#94-synthèse-des-tests)
+- [10. Difficultés rencontrées](#10-difficultés-rencontrées)
+- [11. Limites et améliorations](#11-limites-et-améliorations)
+- [12. Liste des captures](#12-liste-des-captures)
 
 ---
 

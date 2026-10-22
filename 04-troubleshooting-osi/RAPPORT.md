@@ -7,7 +7,41 @@
 
 ## Sommaire
 
-[TOC]
+- [1. Contexte](#1-contexte)
+- [2. Objectifs](#2-objectifs)
+- [3. Méthodologie de diagnostic](#3-méthodologie-de-diagnostic)
+  - [3.1 Le modèle OSI](#31-le-modèle-osi)
+  - [3.2 Le poste témoin](#32-le-poste-témoin)
+  - [3.3 Correspondance des outils](#33-correspondance-des-outils)
+- [4. Environnement de test](#4-environnement-de-test)
+  - [4.1 Topologie](#41-topologie)
+  - [4.2 Plan d'adressage](#42-plan-dadressage)
+  - [4.3 Configuration du routeur R1](#43-configuration-du-routeur-r1)
+  - [4.4 Configuration des postes](#44-configuration-des-postes)
+- [5. État de référence (avant panne)](#5-état-de-référence-avant-panne)
+- [6. Intervention n°1 — Panne de câble (couche 1)](#6-intervention-n1--panne-de-câble-couche-1)
+  - [6.1 Fiche d'incident](#61-fiche-dincident)
+  - [6.2 Constat des symptômes](#62-constat-des-symptômes)
+  - [6.3 Diagnostic couche par couche](#63-diagnostic-couche-par-couche)
+  - [6.4 Cause racine](#64-cause-racine)
+  - [6.5 Résolution](#65-résolution)
+  - [6.6 Vérification](#66-vérification)
+- [7. Intervention n°2 — Mauvaise configuration IP (couche 3)](#7-intervention-n2--mauvaise-configuration-ip-couche-3)
+  - [7.1 Fiche d'incident](#71-fiche-dincident)
+  - [7.2 Constat des symptômes](#72-constat-des-symptômes)
+  - [7.3 Diagnostic couche par couche](#73-diagnostic-couche-par-couche)
+  - [7.4 Cause racine](#74-cause-racine)
+  - [7.5 Résolution](#75-résolution)
+  - [7.6 Vérification](#76-vérification)
+- [8. Synthèse des interventions](#8-synthèse-des-interventions)
+- [9. Recommandations](#9-recommandations)
+- [10. Annexe — Commandes exécutées par équipement](#10-annexe--commandes-exécutées-par-équipement)
+  - [NAT1 — Nœud NAT](#nat1--nœud-nat)
+  - [Switch1 — Ethernet switch](#switch1--ethernet-switch)
+  - [R1 — Routeur Cisco c7200](#r1--routeur-cisco-c7200)
+  - [PC1 — Poste de l'utilisateur](#pc1--poste-de-lutilisateur)
+  - [PC2 — Poste témoin](#pc2--poste-témoin)
+- [11. Liste des captures](#11-liste-des-captures)
 
 ---
 

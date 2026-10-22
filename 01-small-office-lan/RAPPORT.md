@@ -7,7 +7,30 @@
 
 ## Sommaire
 
-[TOC]
+- [1. Contexte](#1-contexte)
+- [2. Objectifs](#2-objectifs)
+- [3. Matériel utilisé](#3-matériel-utilisé)
+- [4. Type de réseau](#4-type-de-réseau)
+- [5. Plan d'adressage IP](#5-plan-dadressage-ip)
+  - [5.1 Informations sur le réseau](#51-informations-sur-le-réseau)
+  - [5.2 Répartition des adresses](#52-répartition-des-adresses)
+  - [5.3 Tableau d'adressage](#53-tableau-dadressage)
+- [6. Schéma réseau](#6-schéma-réseau)
+  - [6.1 Topologie annotée dans GNS3](#61-topologie-annotée-dans-gns3)
+  - [6.2 Schéma simplifié](#62-schéma-simplifié)
+- [7. Câblage](#7-câblage)
+  - [7.1 Création de la topologie dans GNS3](#71-création-de-la-topologie-dans-gns3)
+  - [7.2 Configuration du switch SW1](#72-configuration-du-switch-sw1)
+  - [7.3 Tableau de câblage](#73-tableau-de-câblage)
+- [8. Configuration des équipements](#8-configuration-des-équipements)
+  - [8.1 R1 — Routeur](#81-r1--routeur)
+  - [8.2 Postes PC1 à PC8 (VPCS)](#82-postes-pc1-à-pc8-vpcs)
+- [9. Tests de connectivité](#9-tests-de-connectivité)
+  - [9.1 Depuis R1](#91-depuis-r1)
+  - [9.2 Depuis chaque PC](#92-depuis-chaque-pc)
+  - [9.3 Matrice de connectivité](#93-matrice-de-connectivité)
+- [10. Difficultés rencontrées](#10-difficultés-rencontrées)
+- [11. Liste des captures](#11-liste-des-captures)
 
 ---
 
